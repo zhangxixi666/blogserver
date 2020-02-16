@@ -22,8 +22,8 @@ public class UserManaController {
     UserService userService;
 
     @RequestMapping(value = "/user", method = RequestMethod.GET)
-    public List<User> getUserByNickname(String nickname) {
-        return userService.getUserByNickname(nickname);
+    public List<User> getUserByLoginName(String nickname) {
+        return userService.getUserByLoginName(nickname);
     }
 
     @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)

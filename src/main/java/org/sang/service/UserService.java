@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 
+
 import java.util.List;
 
 /**
@@ -69,7 +70,7 @@ public class UserService implements UserDetailsService {
         return userMapper.updateUserEmail(email, Util.getCurrentUser().getId());
     }
 
-    public List<User> getUserByNickname(String nickname) {
+    public List<User> getUserByLoginName(String nickname) {
         List<User> list = userMapper.getUserByLoginName(nickname);
         return list;
     }

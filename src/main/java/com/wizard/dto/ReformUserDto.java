@@ -1,6 +1,7 @@
-package org.sang.bean;
+package com.wizard.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.sang.bean.Role;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -9,11 +10,7 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by sang on 2017/12/17.
- * 用户数据结构
- */
-public class User implements UserDetails {
+public class ReformUserDto implements UserDetails {
     //用户id
     private Long id;
     //用户名
